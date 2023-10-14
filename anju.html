@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form 3</title>
+    <style>
+    h2{
+        color:rgb(186, 19, 186);
+    }
+    body{
+        height: max-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    label{
+        color: crimson;
+    }
+    #anj:hover{   
+            border: 2px solid rgb(86, 4, 86);
+            background-color: rgb(123, 142, 143);
+        }
+    fieldset{
+            color:black;
+            background-color: lightcyan;
+        }
+    label[for="cs"].department-label,
+    label[for="ec"].department-label,
+    label[for="civil"].department-label {
+        color: black;
+    }
+        
+    
+    </style>
+</head>
+<body>
+    <form action="confirmation.html">
+        <fieldset>
+         <legend><b><h2>Personal Details</h2></b></legend>
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+        <br><br>
+
+        <label for="mname">Middle Name</label>
+        <input type="text" id="mname" name="mname">
+        <br><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname">
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <label for="dob">DOB</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <label for="contact Number">Contact Number</label>
+        <input type="contact number" required placeholder="enter 10 digit number" id="contact number" name="contact number" pattern="[0-9]{10}">
+
+        </fieldset>
+
+        <fieldset>
+            <legend><b><h2>Educational Details</h2></b></legend>
+             <label for=""></label>
+            <label for="college name">College Name</label>
+            <input list="collegenames" id="collegename" name="collegename">
+
+            <datalist id="collegenames">
+                <option>Googte college of Engineering</option>
+                <option>KEL college of Engineering</option>
+                <option>Jain college of Engineering</option>
+                <option>Jain college of Engineering and Research</option>
+                <option>Angadi College of Engineering</option>
+                <option>Maratha Mandal college of Engineering</option>
+
+            </datalist>
+            <br><br>
+            <label for="">Department</label>
+            <br><br>
+
+            <input type="radio" id="cs" name="department">
+            <label for="cs"  class="department-label">cs</label>
+
+            <input type="radio" id="ec" name="department">
+            <label for="ec"  class="department-label">ec</label>
+            
+            <input type="radio" id="civil" name="department">
+            <label for="ec"  class="department-label">civil</label>
+            <br><br>
+
+            <label for="yog">YOG</label>
+            <input list="yop" id="yog" name="yog">
+
+            <datalist id="yop">
+                 <option>2018</option>
+                 <option>2019</option>
+                 <option>2020</option>
+                 <option>2021</option>
+                 <option>2022</option>
+                 <option>2023</option>
+
+            </datalist>
+            <br><br>
+        
+            <b><label for="">SKILLS:</label></b>
+            <br><br>
+            
+            <input type="checkbox" id="Java" name="java">
+            <label for="">Java</label>
+            <br><br>
+
+            <input type="checkbox" id="css" name="css">
+            <label for="">Css</label>
+            <br><br>
+
+            <input type="checkbox" id="HTML" name="HTML">
+            <label for="">HTML</label>
+            <br><br>
+
+            <input type="checkbox" id="JavaScript" name="JavaScript">
+            <label for="">JavaScript</label>
+            <br><br>
+
+        
+         </fieldset>
+         <br>
+         <center>
+            <input type="submit" id="anj">
+         </center>
+</body>
+</html>
